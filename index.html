@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Academy - Catálogo de Códigos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://www.alura.com.br/artigos/assets/html-css-js/html-css-e-js-definicoes.png" type="image/webp">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="logo-header">
+      <img src="https://www.alura.com.br/artigos/assets/html-css-js/html-css-e-js-definicoes.png" alt="Logo Code Academy" class="logo">
+      <h1>Catálogo de Códigos</h1>
+    </header>
+
+    <nav class="categories-nav">
+      <button class="category-tab" data-category="html">HTML</button>
+      <button class="category-tab" data-category="css">CSS</button>
+      <button class="category-tab" data-category="javascript">JavaScript</button>
+      <button class="category-tab" data-category="php">PHP</button>
+      <button class="category-tab" data-category="twig">Twig</button>
+      <button class="category-tab" data-category="ecommerce">E-commerce API</button>
+    </nav>
+
+    <div class="catalog-area">
+      <div class="input-section">
+        <h3>Pesquisar Código</h3>
+        <input type="text" id="searchInput" placeholder="Digite uma tag ou função...">
+      </div>
+
+      <div class="output-section">
+        <h3>Resultados</h3>
+        <div id="resultsContainer"></div>
+      </div>
+    </div>
+
+    <section class="favorites-section">
+      <h2>Favoritos</h2>
+      <div id="favoritesList" class="favorites-list"></div>
+    </section>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "highlight.js": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/highlight.min.js"
+    }
+  }
+  </script>
+  
+  <script type="module" src="app.js"></script>
+</body>
+</html>
